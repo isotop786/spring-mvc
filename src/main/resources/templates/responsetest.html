@@ -26,7 +26,8 @@
 	<p>Full name: <span th:text="${user.fullName}"></span></p>
 	<p>Age: <span th:text="${user.age}"></span></p>
 	<p>Gender: <span th:text="${user.gender}"></span></p>
-	<p>Employed: <span th:text="${user.employed}"></span></p>
+	<p>Employment status: <span th:text="${user.employed}? 'Employed'  : 'Not working'"></span></p>
+	<a href="/">Add User</a>
 </div>
 
 
