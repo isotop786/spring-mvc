@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Response</title>
+<style type="text/css">
+	body{
+		font-family: helvetica;
+	}
+	.detals{
+		background: #eee;
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+	.detals p{
+		
+	}
+</style>
+</head>
+<body>
+<h2 text-align="center">User Reponse page</h2>
+
+<div class="detals">
+	<p>Full name: <span th:text="${user.fullName}"></span></p>
+	<p>Age: <span th:text="${user.age}"></span></p>
+	<p>Gender: <span th:text="${user.gender}"></span></p>
+	<p>Employed: <span th:text="${user.employed}"></span></p>
+</div>
+
+
+</body>
+</html>

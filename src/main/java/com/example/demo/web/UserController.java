@@ -36,7 +36,7 @@ public class UserController {
 		return Arrays.asList(items);
 	}
 	
-	@RequestMapping("/{userId}/products")
+	@RequestMapping("/{userId}/products") 
 	public List<Product> displayProductJson()
 	{
 		List<Product> products = new ArrayList<>();
